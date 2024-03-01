@@ -25,5 +25,11 @@ namespace BankController.Controllers
 
             return Json(JsonSerializer.Serialize(exampleAccount));
         }
+
+        [Route("/account-statement")]
+        public VirtualFileResult GetAccountStatement()
+        {
+            return new VirtualFileResult("/PDF/dummy.pdf", "application/pdf");
+        }
     }
 }

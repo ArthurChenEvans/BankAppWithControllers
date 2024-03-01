@@ -24,3 +24,4 @@ C:\Users\arthur.evans\Documents\GitHub\BankAppWithControllers\BankController\Ban
 C:\Users\arthur.evans\Documents\GitHub\BankAppWithControllers\BankController\BankController\obj\Debug\net8.0\BankController.pdb
 C:\Users\arthur.evans\Documents\GitHub\BankAppWithControllers\BankController\BankController\obj\Debug\net8.0\BankController.genruntimeconfig.cache
 C:\Users\arthur.evans\Documents\GitHub\BankAppWithControllers\BankController\BankController\obj\Debug\net8.0\ref\BankController.dll
+C:\Users\arthur.evans\Documents\GitHub\BankAppWithControllers\BankController\BankController\bin\Debug\net8.0\BankController.staticwebassets.runtime.json

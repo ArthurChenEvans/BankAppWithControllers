@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "zVvXU0dj5KccwFm6WxBcdR9bQsKApJvC3jmLivOsE5o=",
+  "Hash": "DRZP4ChlPrxKztN9VnJsAoaigBSKP+bvRcl3V4uCQYQ=",
   "Source": "BankController",
   "BasePath": "_content/BankController",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "BankController\\wwwroot",
+      "Source": "BankController",
+      "ContentRoot": "C:\\Users\\arthur.evans\\Documents\\GitHub\\BankAppWithControllers\\BankController\\BankController\\wwwroot\\",
+      "BasePath": "_content/BankController",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\arthur.evans\\Documents\\GitHub\\BankAppWithControllers\\BankController\\BankController\\wwwroot\\PDF\\dummy.pdf",
+      "SourceId": "BankController",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arthur.evans\\Documents\\GitHub\\BankAppWithControllers\\BankController\\BankController\\wwwroot\\",
+      "BasePath": "_content/BankController",
+      "RelativePath": "PDF/dummy.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PDF\\dummy.pdf"
+    }
+  ]
 }
