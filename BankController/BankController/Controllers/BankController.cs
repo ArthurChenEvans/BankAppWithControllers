@@ -31,5 +31,25 @@ namespace BankController.Controllers
         {
             return new VirtualFileResult("/PDF/dummy.pdf", "application/pdf");
         }
+
+        [Route("/get-current-balance/{accountNumber}")]
+        public IActionResult GetBalanceForAccountNumber(int accountNumber)
+        {
+            SampleJsonClass exampleAccount = new SampleJsonClass
+            {
+                accountNumber = 1001,
+                accountHolderName = "Example Name",
+                currentBalance = 5000
+            };
+
+            if (accountNumber == exampleAccount.accountNumber)
+            {
+                return Ok(exampleAccount.currentBalance);
+            }
+            else 
+            {
+                return NotFound("Error 404: Page Not Found");
+            }
+        }
     }
 }
