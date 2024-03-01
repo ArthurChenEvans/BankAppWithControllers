@@ -33,22 +33,29 @@ namespace BankController.Controllers
         }
 
         [Route("/get-current-balance/{accountNumber}")]
-        public IActionResult GetBalanceForAccountNumber(int accountNumber)
+        public IActionResult GetBalanceForAccountNumber(int? accountNumber)
         {
-            SampleJsonClass exampleAccount = new SampleJsonClass
-            {
-                accountNumber = 1001,
-                accountHolderName = "Example Name",
-                currentBalance = 5000
-            };
-
-            if (accountNumber == exampleAccount.accountNumber)
-            {
-                return Ok(exampleAccount.currentBalance);
-            }
-            else 
+            if (!accountNumber.HasValue)
             {
                 return NotFound("Error 404: Page Not Found");
+            }
+            else
+            {
+                SampleJsonClass exampleAccount = new SampleJsonClass
+                {
+                    accountNumber = 1001,
+                    accountHolderName = "Example Name",
+                    currentBalance = 5000
+                };
+
+                if (accountNumber == exampleAccount.accountNumber)
+                {
+                    return Ok(exampleAccount.currentBalance);
+                }
+                else
+                {
+                    return BadRequest("Error 401: Page With That Number Does Not Exist.");
+                }
             }
         }
     }
